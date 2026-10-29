@@ -1,0 +1,15 @@
+{
+  "name": "typing-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Typing practice application scaffold",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm --prefix server run dev",
+    "dev:client": "npm --prefix client run dev",
+    "start:server": "npm --prefix server start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
