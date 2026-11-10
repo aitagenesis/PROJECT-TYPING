@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Leaderboard{% endblock %}{% block content %}<section class="panel"><h1>Leaderboard</h1>{% if entries %}<ol>{% for entry in entries %}<li>{{ entry.username }} — {{ entry.best_wpm }} WPM</li>{% endfor %}</ol>{% else %}<p>No scores yet. Be the first to take a test.</p>{% endif %}</section>{% endblock %}

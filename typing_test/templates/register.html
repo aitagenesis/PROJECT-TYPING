@@ -1,0 +1,2 @@
+{% extends "base.html" %}{% block title %}Create account{% endblock %}{% block content %}
+<section class="panel"><h1>Create your account</h1><form method="post"><label>Username<input name="username" required autocomplete="username"></label><label>Email<input type="email" name="email" required autocomplete="email"></label><label>Password<input type="password" name="password" minlength="8" required autocomplete="new-password"></label><button class="button">Register</button></form></section>{% endblock %}

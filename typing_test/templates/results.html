@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block title %}Results{% endblock %}{% block content %}<section class="panel"><h1>Your results</h1><p>Welcome, {{ user.username if user else 'typist' }}. Your latest test has been saved.</p><a class="button" href="{{ url_for('test') }}">Try again</a></section>{% endblock %}
